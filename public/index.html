@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BijuJS</title>
+    <meta charset='utf-utf-8'>
+    <link rel='stylesheet' href='assets/css/style.css'>
+  </head>
+
+  <body>
+    <script src="assets/js/Biju.js"> /* FrontEnd Requester */ </script>
+    <h1>BijuJS is running!</h1>
+
+    <h2>Getting Started</h2>
+    <p>Using BijuJS is very easy!</p>
+    <p>Open your browser's developer tools console and type in:</p>
+    <code>Biju.hello("world", console.log)</code>
+    <p>
+      This calls <code>run/hello</code> with <code>"world"</code> argument
+      and <code>console.log</code> as callback.
+    </p>
+    <p>
+      The function returns a Promise so you can check your request's status.
+      Then right after you should get a response object that looks like this:
+    </p>
+    <samp>
+      { "status": "0, "stdout": "Hello, world! It works!\n", "stderr": "" }
+    </samp>
+    <p>So, say you want to set up a script named <em>example</em>, then:</p>
+    <ol>
+      <li>Add <em>example</em> inside the <em>run/</em> folder</li>
+      <li>Create your front-end page on the <em>public/</em> folder</li>
+      <li>Call it in your page as Biju.example([args,], callback)</li>
+    </ol>
+    <p>That's it!</p>
+
+    <h2>What's next?</h2>
+    <p>BijuJS is provided bare-bones, but it's easy to expand upon it.</p>
+    <p>
+      Consider using <a href="https://andybrewer.github.io/mvp/">MVP.CSS</a>
+      or installing a
+      <a href="https://expressjs.com/en/guide/using-template-engines.html">
+        template rendering engine
+      </a>
+      to quickly develop nice and functional interfaces.
+    </p>
+  </body>
+</html>
