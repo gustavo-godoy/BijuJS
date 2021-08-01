@@ -19,7 +19,7 @@ if (viewEngine) {
   BijuJS.set('view engine', viewEngine)
   BijuJS.get('/:anything', (request, response) => {
     file = request.params['anything']
-    res.render(file)
+    response.render(file)
   })
 }
 
